@@ -15,5 +15,40 @@ Para a conclusão desse desafio, utilizei a plataforma [Draw.io](https://app.dia
 ### Diagrama
 Na ferramenta citada a cima criei o seguinte diagrama.
 
+<img src="/iPhoneUML.drawio.png">
+
+### Diagrama utilizando Mermaid
+
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        + tocar() : void
+        + pausar() : void
+        + selecionarMusica(String musica) : String
+        + aumentarVolume() : void
+        + diminuirVolume() : void
+    }
+
+    class AparelhoTelefonico {
+        + ligar(String numero) : String
+        + atender() : void
+        + iniciarCorreioVoz() : void
+        + favoritarContato() : void
+    }
+
+    class NavegadorInternet {
+        + exibirPagina(String url) : String
+        + adicionarNovaAba() : void
+        + atualizarPagina() : void
+    }
+
+    class iPhone {
+    }
+
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
+
+```
 
 > :memo: **Obs:** Este é um repositório com fins acadêmicos, fique avontade para utiliza-lo 🫡.
